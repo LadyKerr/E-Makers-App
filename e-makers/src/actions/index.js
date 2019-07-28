@@ -9,7 +9,7 @@ export const getShops = () => dispatch => {
   dispatch({ type: FETCH_SHOP_START });
   axios
     .get(
-      "https://openapi.etsy.com/v2/listings/active?api_key=rm11823hzekt0foucqr24v1c"
+      "https://openapi.etsy.com/v2/listings/active?api_key=process.env.REACT_APP_API_KEY"
     )
     .then(res => {
       console.log("Shop Data Response", res);
