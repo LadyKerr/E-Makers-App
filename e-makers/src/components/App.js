@@ -12,12 +12,12 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">View Shops</Link>
+              <Link to="/shops">View Shops</Link>
             </li>
           </ul>
         </nav>
         <Route exact path="/" component={Home} />
-        <Route exact="/shops" component={Shops} />
+        <Route exact path="/shops" component={Shops} />
       </div>
     </Router>
   );

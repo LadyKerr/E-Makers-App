@@ -7,8 +7,8 @@ import {
 const initialState = {
   shops: [],
   error: "",
-  fetchingShops: false,
-  addingShops: false
+  fetchingShops: false
+  // addingShops: false
 };
 
 const shopReducer = (state = initialState, action) => {
@@ -32,6 +32,8 @@ const shopReducer = (state = initialState, action) => {
         error: action.payload,
         fetchingShops: false
       };
+    default:
+      return state;
   }
 };
 
